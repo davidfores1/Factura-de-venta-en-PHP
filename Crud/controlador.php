@@ -13,7 +13,6 @@ if($valor = str_replace(',', '', $prec)){
 $total = $valor*$cant;   	
 }
 
-//var_dump($prec);die();
 
 $sentencia = $conn->prepare("INSERT INTO producto(nombre, precio, cantidad, total) VALUES (?, ?, ?,?);");
 $resultado = $sentencia->execute([$prod, $valor, $cant, $total]);
