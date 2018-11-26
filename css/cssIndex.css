@@ -1,0 +1,57 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    border:none;
+    width: 100%;
+}
+
+#formulario{
+    margin: 10px auto;
+    padding:10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #666666;
+    width: 500px;
+}
+
+.ticket{
+	margin: 10px auto;
+    padding:10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #666666;
+    width: 500px;
+}
+
+table {
+   width: 100%;
+   border: 1px solid #000;
+}
+th, td {
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-collapse: collapse;
+   padding: 0.3em;
+}
+
+#f{
+  width: 100px;
+  text-align: center; 
+
+}
+
+#cant{
+text-align: center;
+
+}
+a {text-decoration:none; color: green;} /* Link no visitado*/
+a:hover {text-decoration:underline; color:#99FF00; background: #EEEEEE} /*Mause sobre el link*/
