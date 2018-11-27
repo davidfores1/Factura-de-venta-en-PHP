@@ -13,6 +13,7 @@
         <tr>
           <td class="cantidad"><?php echo $prod->cantidad ?></td>
           <td class="producto"><?php echo $prod->nombre ?></td>
+          <td class="precio1"><?php echo $prod->precio = number_format($prod->precio,0,'.',','); ?></td>
           <td class="precio"><?php echo $forma = number_format($prod->total,0,'.',',');?></td>
         </tr>
         

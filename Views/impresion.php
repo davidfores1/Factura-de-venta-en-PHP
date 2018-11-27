@@ -1,6 +1,6 @@
 .<?php
 
-include"conexion.php";
+include"../conexion.php";
 
 $sentencia = $conn->query("SELECT * FROM producto");
 $producto = $sentencia->fetchAll(PDO::FETCH_OBJ);
@@ -10,29 +10,30 @@ $producto = $sentencia->fetchAll(PDO::FETCH_OBJ);
 <html>
 
 <head>
-  <link rel="stylesheet" href="css/styleImpresion.css">
-  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="../css/styleImpresion.css">
+  <script src="../js/script.js"></script>
 
 </head>
   
 <body style="margin: 30px;">
-  <a href="index.php">Volver</a>
+  <a href="../index.php">Volver</a>
   <div class="ticket">
-     <img src="images.jpg" alt="Logotipo">
+     <img src="../img/images.jpg" alt="Logotipo">
     <p class="centrado">TICKET DE VENTA<br>Cali-valle<br><?php echo date("d/m/y"). " " . date("H:i:s") ?></p>
     <table>
       <thead>
         <tr>
-          <th class="cantidad">UD</th>
-          <th class="producto">PRODUCT</th>
+          <th class="cantidad">UN</th>
+          <th class="producto">PROD</th>
+          <th class="precio1">V.</th>
           <th class="precio">$PRE</th>
         </tr>
       </thead>
       <tbody>
            
-          <?php include_once "listaImpresion.php"; ?>
+          <?php include_once "../Crud/listaImpresion.php"; ?>
 
-    <td colspan="2"><strong>TOTAL</strong></td>
+    <td colspan="3"><strong>TOTAL</strong></td>
     <td class="precio"><?php echo $form ?></td>
         
       </tbody>

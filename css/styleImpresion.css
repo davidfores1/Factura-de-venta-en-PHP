@@ -1,5 +1,5 @@
 * {
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Times New Roman';
 }
  
@@ -13,26 +13,30 @@ table {
  
 td.producto,
 th.producto {
-  width: 75px;
-  max-width: 75px;
+  width: 5px;
+  max-width: 90px;
 }
  
 td.cantidad,
 th.cantidad {
   text-align: left;
-  width: 50px;
-  max-width: 50px;
+  width: 28px;
+  max-width: 100px;
   word-break: break-all;
 }
  
 td.precio,
 th.precio {
-  width: 90px;
-  max-width: 90px;
+  width: 70px;
+  max-width: 100px;
   word-break: break-all;
+  text-align: right;
 }
-th.precio,
-td.precio {
+th.precio1,
+td.precio1 {
+  width: 50px;
+  max-width: 100px;
+  word-break: break-all;
   text-align: right;
 }
 

@@ -21,4 +21,5 @@ if($resultado === TRUE) header("location:../index.php");
 
 else echo "Algo salió mal. Por favor verifica que la tabla exista";
 
+
  ?>

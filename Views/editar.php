@@ -26,7 +26,7 @@ if($prod===FALSE){
 </head>
 <body>
 
-   <form id="formulario" action="actualizar.php" method="POST">
+   <form id="formulario" action="../Crud/actualizar.php" method="POST">
                 <div id="content">
                     <input type="hidden" name="id" value="<?php echo $prod->id; ?> ">
 

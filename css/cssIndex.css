@@ -46,6 +46,11 @@ th, td {
 #f{
   width: 100px;
   text-align: center; 
+}
+
+#delete{
+  width: 100px;
+  text-align: right; 
 
 }
 

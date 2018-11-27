@@ -8,8 +8,13 @@
     <script type="text/javascript" src="js/decimal.js"></script>
 </head>
 <body>
+     <div id="formulario">
+    <form action="Crud/nuevaFactura.php" method="POST">
+        <input type="submit" value="Nueva"/>
+    </form>
 
-    <form id="formulario" action="Crud/controlador.php" method="POST">
+    <form  action="Crud/insertar.php" method="POST">
+    
              <div ><h1>Factura</h1></div>
                <br>
 
@@ -25,10 +30,12 @@
                     <input id="cantidad" name="cantidad" type="number" required placeholder="Cantidad..." /> <br>
                     <br>
                     <input id="boton1" name="enviar" type="submit" value="Enviar" />
+                    
                 </div>
             </form>
+           </div> 
     <?php 
-        include_once "listaIndex.php";
+        include_once "Views/listaIndex.php";
      ?>
 </body>
 </html>

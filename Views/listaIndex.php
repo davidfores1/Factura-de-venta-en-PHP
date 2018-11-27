@@ -39,7 +39,7 @@
           <td id="cant"><?php echo $prod->cantidad ?></td>
           <td><?php echo $forma1 = number_format($prod->precio,0,'.',',');?></td>
           <td><?php echo $forma = number_format($prod->total,0,'.',',');?></td>
-          <td><a href="<?php echo "Crud/editar.php?id=" . $prod->id ?>">Editar</a></td>
+          <td><a href="<?php echo "Views/editar.php?id=" . $prod->id?>">Editar</a></td>
           <td><a href="<?php echo "Crud/eliminar.php?id=" . $prod->id ?>">Eliminar</a></td>
         </tr>
           
@@ -48,10 +48,41 @@
       </tbody>
       <td colspan="3"><strong>Total</strong></td>
       <td ><?php echo $form ?></td>
-      <td style="text-align: center;" colspan="2"><a href="impresion.php">Imprimir</a></td>
+      <td style="text-align: center;" colspan="2"><a href="Views/impresion.php">Imprimir</a></td>
     </table>
 
-     
+    <!-- Formulario  para  la Devoulción del efectivo -->
+
+    <br>  
+   <form action="index.php" method="POST">
+      <label for="efectivo">Efectivo</label>
+       <input type="text" name="efectivo" onkeyup="format(this)" onchange="format(this)"
+                    required placeholder="Efectivo...">
+         <br><br>
+         <input type="submit" Value="Devolución">
+     </form>
+<?php 
+         if (!isset($_POST["efectivo"])) exit();
+
+         $efect = $_POST["efectivo"];
+         include_once"conexion.php";
+
+        $get_sum = $conn->prepare('SELECT precio, SUM(total) AS stotal FROM producto');
+        $get_sum->execute();
+
+        if($data = $get_sum->fetch(PDO::FETCH_ASSOC)) {
+        $all = $data['stotal'];
+        }
+
+        if($devo = str_replace(',', '', $efect)){
+         $dev = $devo-$all;
+        }
+
+        $formV = number_format($dev,0,'.',',');
+
+               echo "$" . $formV; 
+       
+      ?>
      
   </div>   
 
