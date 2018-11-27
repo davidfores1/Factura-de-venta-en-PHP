@@ -39,7 +39,7 @@ if($prod===FALSE){
                     <label>Cantidad</label><br>
                     <input value="<?php echo $prod->cantidad ?>"  name="cantidad" type="text" /> <br>
 
-                    <input id="campo3" name="enviar" type="submit" value="Guardar" />
+                    <input id="boton2" name="enviar" type="submit" value="Guardar" />
           
                 </div>
             </form>  

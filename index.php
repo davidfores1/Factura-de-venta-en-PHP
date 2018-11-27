@@ -15,16 +15,16 @@
 
                 <div id="content">
                     <label>Nombre del producto</label><br>
-                    <input id="no" name="nombre" type="text" required placeholder="Producto..." /> <br>
+                    <input id="nombre" name="nombre" type="text" required placeholder="Producto..." /> <br>
 
                     <label>Precio</label><br>
-                    <input id="number" name="precio" type="text" onkeyup="format(this)" onchange="format(this)"
+                    <input id="precio" name="precio" type="text" onkeyup="format(this)" onchange="format(this)"
                     required placeholder="Precio..." /> <br>
 
                     <label>Cantidad</label><br>
-                    <input id="number" name="cantidad" type="number" required placeholder="Cantidad..." /> <br>
+                    <input id="cantidad" name="cantidad" type="number" required placeholder="Cantidad..." /> <br>
                     <br>
-                    <input id="campo3" name="enviar" type="submit" value="Enviar" />
+                    <input id="boton1" name="enviar" type="submit" value="Enviar" />
                 </div>
             </form>
     <?php 
