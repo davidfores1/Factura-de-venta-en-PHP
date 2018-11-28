@@ -30,14 +30,14 @@ if($prod===FALSE){
                 <div id="content">
                     <input type="hidden" name="id" value="<?php echo $prod->id; ?> ">
 
-                    <label>Nombre Del producto</label><br>
+                    <label>Nombre del producto</label><br>
                     <input value="<?php echo $prod->nombre ?>" name="nombre" type="text" /> <br>
 
                     <label>Precio</label><br>
                     <input value="<?php echo $prod->precio ?>" name="precio" type="text" onkeyup="format(this)" onchange="format(this)" /> <br>
 
                     <label>Cantidad</label><br>
-                    <input value="<?php echo $prod->cantidad ?>"  name="cantidad" type="text" /> <br>
+                    <input value="<?php echo $prod->cantidad ?>"  name="cantidad" type="text" /> <br><br>
 
                     <input id="boton2" name="enviar" type="submit" value="Guardar" />
           
