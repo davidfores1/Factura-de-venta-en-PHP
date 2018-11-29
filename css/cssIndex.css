@@ -16,8 +16,12 @@ body{
     padding:10px;
     text-align: center;
     border-radius: 10px;
-    border: 1px solid #666666;
+    border: 1px solid #074227;
     width: 500px;
+}
+
+#ini{
+float: left;
 }
 
 .ticket{
@@ -26,7 +30,7 @@ body{
     text-align: center;
     border-radius: 10px;
     border: 1px solid #666666;
-    width: 500px;
+    width: 700px;
 }
 
 table {
@@ -35,21 +39,26 @@ table {
 }
 th, td {
    width: 25%;
-   text-align: left;
+   text-align: center;
    vertical-align: top;
    border: 1px solid #000;
    border-collapse: collapse;
    padding: 0.3em;
 }
 
+th,#t{
+  color:#fff;
+  background-color: #074227;
+}
+
 #f{
   width: 100px;
-  text-align: center; 
+  text-align: center;
 }
 
 #delete{
   width: 100px;
-  text-align: right; 
+  text-align: right;
 
 }
 
@@ -57,5 +66,5 @@ th, td {
 text-align: center;
 
 }
-a {text-decoration:none; color: green;} /* Link no visitado*/
+a {text-decoration:none; color:#158746;} /* Link no visitado*/
 a:hover {text-decoration:underline; color:#99FF00; background: #EEEEEE} /*Mause sobre el link*/
