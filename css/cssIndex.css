@@ -12,12 +12,13 @@ body{
 }
 
  #formulario{
+   float: left;
     margin: 10px auto;
     padding:10px;
     text-align: center;
     border-radius: 10px;
     border: 1px solid #074227;
-    width: 500px;
+    width: 400px;
 }
 
 #ini{
@@ -31,6 +32,7 @@ float: left;
     border-radius: 10px;
     border: 1px solid #666666;
     width: 700px;
+    float: left;
 }
 
 table {

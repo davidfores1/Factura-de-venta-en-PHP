@@ -58,7 +58,7 @@
       <label for="efectivo">Efectivo:</label>
        <input type="text" name="efectivo" onkeyup="format(this)" onchange="format(this)"
                     required placeholder="Efectivo...">
-         <br><br>
+         <br>
          <input class="btn btn-success" type="submit" Value="Devolución">
      </form>
 <?php
