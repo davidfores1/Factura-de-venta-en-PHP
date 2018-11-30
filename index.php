@@ -13,6 +13,8 @@
 
 </head>
 <body>
+  <div class="container">
+    <div class="row">
      <div id="formulario">
        <div>
          <form id="ini" action="Crud/nuevaFactura.php" method="POST">
@@ -24,7 +26,6 @@
     <form  action="Crud/insertar.php" method="POST">
 
              <div ><h2>Factura</h2></div>
-
                 <div id="content">
                     <input class="form-control" id="nombre" name="nombre" type="text" required placeholder="Producto..." /> <br>
 
@@ -32,14 +33,19 @@
                     required placeholder="Precio..." /> <br>
 
                     <input class="form-control" id="cantidad" name="cantidad" type="number" required placeholder="Cantidad..." /> <br>
-                    
+
                     <input class="btn btn-success" id="boton1" name="enviar" type="submit" value="Enviar" />
 
                 </div>
             </form>
            </div>
+        
+
     <?php
         include_once "Views/listaIndex.php";
      ?>
+     </div>
+</div>
+
 </body>
 </html>
