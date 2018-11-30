@@ -15,6 +15,9 @@
 <body>
   <div class="container">
     <div class="row">
+
+  <div class="row">
+    <div class=""col-md-4">
      <div id="formulario">
        <div>
          <form id="ini" action="Crud/nuevaFactura.php" method="POST">
@@ -39,6 +42,8 @@
                 </div>
             </form>
            </div>
+       </div>
+    </div>
         
 
     <?php
