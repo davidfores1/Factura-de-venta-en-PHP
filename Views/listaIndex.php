@@ -67,6 +67,8 @@
          $efect = $_POST["efectivo"];
          include_once"conexion.php";
 
+         global $efect;
+
         $get_sum = $conn->prepare('SELECT precio, SUM(total) AS stotal FROM producto');
         $get_sum->execute();
 
@@ -79,8 +81,9 @@
         }
 
         $formV = number_format($dev,0,'.',',');
-
-               echo "$" . $formV;
+        $devo1 = number_format($devo,0,'.',',');
+               echo "Efectivo: $" . $devo1 . "<br>";     
+               echo "Devolución: $" . $formV;
 
       ?>
 
